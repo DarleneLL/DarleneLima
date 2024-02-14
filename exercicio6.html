@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio6</title>
+</head>
+<body>
+    <!-- Crie 3 objetos com propriedades representando informações pessoais 
+    (nome, idade, nacionalidade e profissão) e exiba essas informações 
+    com um console.log para cada objeto. -->
+    <script>
+        
+        const pessoa = {
+            nome: "",
+            idade: 0,
+            nacionalidade: "",
+            profissao: ""
+        }
+
+        function cadastroPessoa(){
+            for(let contador = 0; contador <= 2; contador ++){
+                pessoa.nome = window.prompt("Digite o nome:")
+                pessoa.idade = window.prompt("Digite a idade:")
+                pessoa.nacionalidade = window.prompt("Digite a nacionalidade:")
+                pessoa.profissao = window.prompt("Digite a profissão:")
+                
+                console.log(pessoa.nome)
+                console.log(pessoa.idade)
+                console.log(pessoa.nacionalidade)
+                console.log(pessoa.profissao)
+            }
+         }
+         cadastroPessoa()
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio9</title>
+</head>
+<body>
+    <!-- Use um switch para exibir mensagens diferentes com base em 
+        uma condição. -->
+    <script>
+        function numPosnegzero(){
+            let n = parseFloat(prompt("Digite um número"))
+            switch(true) {
+                case n > 0:
+                    console.log("O número é positivo.");
+                    break;
+                case n < 0:
+                    console.log("O número é negativo.");
+                    break;
+                case n == 0:
+                    console.log("O número é zero.");
+                    break;
+                default:
+                    console.log("Não é número");
+            }
+        }
+        numPosnegzero()
+    </script>
+</body>
+</html>
